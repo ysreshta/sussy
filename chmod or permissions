@@ -1,0 +1,26 @@
+FILE PREMISSION : 
+
+rwx = read,write,exe
+
+u --> yourself (current user)
+g --> group in which user belongs to 
+o --> others
+a --> all 
+
+ls -ltr 
+
+d rwx rwx rwx
+^  ^   ^   ^ other
+|  |   |
+|  |   | 
+|  |   group
+|  |
+|  rwx for owner form here would be in three parts basically showing does it have the permissions, 
+|   if it doesnt then there would be - 
+type of file (this case directory)
+
+
+adding : 	chmod u+r filename (adding read permissin)
+removing:	chmod u-r filename (removing)
+
+chmod ugo+r filename
